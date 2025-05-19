@@ -50,3 +50,37 @@ html {
 .navlinks a:hover::after {
   width: 100%;
 }
+.hero {
+  background-image: url('https://source.unsplash.com/1600x600/?fashion,style');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #444;
+}
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
