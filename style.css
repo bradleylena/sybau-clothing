@@ -29,11 +29,44 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  /*
   backdrop-filter: blur(20px);
+  */
   z-index: 1;
+}
+.dropdownmenu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  height: 0;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdownmenu.open {
+  height: 200px;
+}
+.dropdownmenu li {
+  padding: 0.7rem;
+  display: flex;
+
+  align-content: center;
+  justify-content: left;
+}
+.dropdownmenu a {
+  color: black;
+  font-size: 18px;
 }
 .logoimg {
   padding-left: 40px;
+}
+.tooglebutton {
+  color: black;
+  font-size: 30px;
+  padding-right: 300px;
+  display: none;
+  cursor: pointer;
 }
 .navlinks li {
   display: inline-block;
@@ -288,7 +321,7 @@ h1 {
   transform: scale(1.07);
   transition: all 1s ease;
 }
-
+/*contact*/
 .Contact {
   background-color: beige;
   display: flex;

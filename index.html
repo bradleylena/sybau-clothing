@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sybau</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -24,6 +32,9 @@
             width="100px"
             height="87px"
           />
+          <div class="tooglebutton">
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <div class="navlinks">
             <nav>
               <ul>
@@ -34,6 +45,16 @@
               </ul>
             </nav>
           </div>
+        </div>
+        <div class="dropdownmenu">
+          <nav>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#Featured">Featured</a></li>
+              <li><a href="#About">About-Us</a></li>
+              <li><a href="#Contact-Us">Contact-Us</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
     </section>
@@ -48,7 +69,7 @@
           See what we have crafted for the bold and the stylish not afraid to
           push boundaries and be the star of any show they walk into.
         </p>
-        <a href="gallery.html" class="btn">View Now</a>
+        <a href="gallery.html" class="btn">view Now</a>
       </div>
     </section>
     <!--Featured Section-->
@@ -65,7 +86,7 @@
             <img src="assets/model2.jpg" alt="" width="450px" height="500px" />
           </div>
           <div class="model3">
-            <img src="assets/model3.jpg" alt="" width="380px" height="500px" />
+            <img src="assets/model3.jpg" alt="" width="450px" height="500px" />
           </div>
         </div>
       </div>
@@ -122,6 +143,15 @@
     <footer>
       <p>&copy; 2025 Syabu Clothing. All rights reserved.</p>
     </footer>
-    <script src="java.js"></script>
+    <script>
+      const tooglebutton = document.querySelector(".tooglebutton");
+      const tooglebuttonIcon = document.querySelector(".tooglebutton");
+      const dropdownmenu = document.querySelector(".dropdownmenu");
+
+      tooglebutton.onclick = function () {
+        dropdownmenu.classList.toggle("open");
+        const isOpen = dropdownmenu.classList.contains(".open");
+      };
+    </script>
   </body>
 </html>

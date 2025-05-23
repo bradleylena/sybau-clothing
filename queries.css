@@ -1,0 +1,115 @@
+/*Mobile-Devices
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    font-size: 15px;
+  }
+  .logoimg {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar {
+    width: 30%;
+  }
+  .navlinks li {
+    font-size: 10px;
+  }
+}*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar .logo,
+  .navbar .navlinks {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .logoimg {
+    padding-left: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .tooglebutton {
+    display: block;
+    padding-right: 200px;
+    padding-top: 20px;
+  }
+  .dropdownmenu {
+    display: block;
+    z-index: 1;
+  }
+  .hero h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    justify-content: center;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background-color: #444;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .gallerycontent {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    transition: all 1s ease;
+  }
+  .gallerycontent:hover {
+    background-color: beige;
+    color: black;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+
+    transition: all 1s ease;
+  }
+  .abtdiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+  .abtdiv p {
+    text-align: center;
+    padding-left: 20px;
+  }
+  .abtdiv img {
+    width: 50%;
+    padding-left: 50px;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    background-color: beige;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+  }
+}
