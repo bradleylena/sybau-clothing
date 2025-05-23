@@ -36,6 +36,7 @@ html {
 }
 .dropdownmenu {
   position: absolute;
+
   right: 2rem;
   top: 60px;
   width: 300px;
@@ -101,7 +102,7 @@ html {
 /*hero-section*/
 .hero {
   background-image: url("assets/bsa.jpg");
-  background-size: cover;
+  background-size: 100vh;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -202,6 +203,7 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+
 .abtdiv h1 {
   font-size: 35px;
 }
