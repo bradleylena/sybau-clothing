@@ -164,4 +164,64 @@
   footer {
     width: 1030px;
   }
+  /*GALLERY MOBILE RESPONSIVE UX*/
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    gap: 15px;
+  }
+
+  .div1 {
+    grid-row: span 2 / span 2;
+    padding-left: 250px;
+  }
+
+  .div2 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    padding-left: 250px;
+  }
+
+  .div3 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 5;
+    padding-left: 250px;
+  }
+
+  .div4 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 7;
+    padding-left: 250px;
+  }
+
+  .div5 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 9;
+    padding-left: 250px;
+  }
+
+  .div6 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 11;
+    padding-left: 250px;
+  }
+
+  .div7 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 13;
+    padding-left: 250px;
+  }
+
+  .div8 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 15;
+    padding-left: 250px;
+  }
+
+  .div9 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 17;
+    padding-left: 250px;
+  }
 }
